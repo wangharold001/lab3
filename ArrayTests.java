@@ -9,6 +9,17 @@ public class ArrayTests {
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
 
+  @Test 
+  public void testReverseInPlace2(){
+    int[] input={1,2,3,4};
+    ArrayExamples.reverseInPlace(input);
+    assertArrayEquals(new int[]{4,3,2,1}, input);
+  }
+
+  @Test public void testReversed2(){
+    int[] input={1,2,3,4};
+    assertArrayEquals(new int[]{4,3,2,1}, ArrayExamples.reversed(input));
+  }
 
   @Test
   public void testReversed() {
